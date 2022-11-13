@@ -2,7 +2,7 @@
 
 // you create a new route for admin
 
-// use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\Front\UserController;
 
 
@@ -16,10 +16,34 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// first way to pass data with view
 
 // Route::get('/admin', function () {
-//     return view('admin');
+//     return view('admin')->with(['data' =>'ali gamal ali','age'=>30]);
 // });
+
+// second way to pass data with view
+// Route::get('/admin', function () {
+//     return view('admin',['data' =>'ali gamal ali','age'=>30,'gender'=>'male']);
+// });
+
+// third way to pass data with view
+// Route::get('/admin', function () {
+//     $data=[];
+//     $data['data']='ali gamal ali';
+//     $data['age']=30;
+//     $data['gender']='male';
+//     return view('admin',$data);
+// });
+// fourth way to pass data with view
+// Route::get('/admin', function () {
+//     $obj=new \stdClass();
+//     $obj->data='ali gamal ali';
+//     $obj->age=30;
+//     $obj->gender='male';
+//     return view('admin',compact('obj'));
+// });
+
 
 // check Name Space for routes and add Group
 // first make folder name is Front and make method in it

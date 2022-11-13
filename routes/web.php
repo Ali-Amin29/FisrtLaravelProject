@@ -20,6 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
-Route::resource('new', NewController::class);
+// make Landing pages
+Route::get('/landing', function () {
+    return view('landing');
+});

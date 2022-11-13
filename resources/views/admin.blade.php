@@ -8,6 +8,10 @@
 </head>
 <body>
 
-    <h1> Admin Page</h1>
+    <h1>{{$obj->data}}</h1>
+    <h2>{{$obj->age}}</h2>
+    <h2>{{$obj->gender}}</h2>
+
+
 </body>
 </html>
